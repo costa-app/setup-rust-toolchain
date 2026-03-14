@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.15.4] - 2026-03-15
+
+* Bump Swatinem/rust-cache from 2.8.2 to 2.9.1 (#87 by @hyperfinitism)
+  This gets rid of the warnings about Node.js 20.
+
 ## [1.15.3] - 2026-03-01
 
 * Bump Swatinem/rust-cache from 2.8.1 to 2.8.2
