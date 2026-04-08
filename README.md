@@ -53,22 +53,22 @@ Afterward, the `components` and `target` specified via inputs are installed in a
 | `toolchain`              | Comma-separated list of Rustup toolchain specifier e.g. `stable`, `nightly`, `1.42.0`. The last version is the default.                                                            | stable        |
 | `target`                 | Additional target support to install e.g. `wasm32-unknown-unknown`                                                                                                                 |               |
 | `components`             | Comma-separated string of additional components to install e.g. `clippy, rustfmt`                                                                                                  |               |
-| `cache`                  | Automatically configure Rust cache (using [`Swatinem/rust-cache`])                                                                                                                 | true          |
-| `cache-directories`      | Propagates the value to [`Swatinem/rust-cache`]                                                                                                                                    |               |
-| `cache-workspaces`       | Propagates the value to [`Swatinem/rust-cache`]. Influenced by the value of `rust-src-dir`.                                                                                        |               |
-| `cache-on-failure`       | Propagates the value to [`Swatinem/rust-cache`]                                                                                                                                    | true          |
-| `cache-key`              | Propagates the value to [`Swatinem/rust-cache`] as `key`                                                                                                                           |               |
-| `cache-shared-key`       | Propagates the value to [`Swatinem/rust-cache`] as `shared-key`                                                                                                                    |               |
-| `cache-bin`              | Propagates the value to [`Swatinem/rust-cache`] as `cache-bin`                                                                                                                     | true          |
-| `cache-provider`         | Propagates the value to [`Swatinem/rust-cache`] as `cache-provider`                                                                                                                | 'github'      |
-| `cache-all-crates`       | Propagates the value to [`Swatinem/rust-cache`] as `cache-all-crates`                                                                                                              | false         |
-| `cache-workspace-crates` | Propagates the value to [`Swatinem/rust-cache`] as `cache-workspace-crates`                                                                                                        | false         |
+| `cache`                  | Automatically configure Rust cache (using [`costa-app/rust-cache`])                                                                                                                 | true          |
+| `cache-directories`      | Propagates the value to [`costa-app/rust-cache`]                                                                                                                                    |               |
+| `cache-workspaces`       | Propagates the value to [`costa-app/rust-cache`]. Influenced by the value of `rust-src-dir`.                                                                                        |               |
+| `cache-on-failure`       | Propagates the value to [`costa-app/rust-cache`]                                                                                                                                    | true          |
+| `cache-key`              | Propagates the value to [`costa-app/rust-cache`] as `key`                                                                                                                           |               |
+| `cache-shared-key`       | Propagates the value to [`costa-app/rust-cache`] as `shared-key`                                                                                                                    |               |
+| `cache-bin`              | Propagates the value to [`costa-app/rust-cache`] as `cache-bin`                                                                                                                     | true          |
+| `cache-provider`         | Propagates the value to [`costa-app/rust-cache`] as `cache-provider`                                                                                                                | 'github'      |
+| `cache-all-crates`       | Propagates the value to [`costa-app/rust-cache`] as `cache-all-crates`                                                                                                              | false         |
+| `cache-workspace-crates` | Propagates the value to [`costa-app/rust-cache`] as `cache-workspace-crates`                                                                                                        | false         |
 | `matcher`                | Enable problem matcher to surface build messages and formatting issues                                                                                                             | true          |
 | `rustflags`              | Set the value of `RUSTFLAGS` (set to empty string to avoid overwriting existing flags)                                                                                             | "-D warnings" |
 | `override`               | Setup the last installed toolchain as the default via `rustup override`                                                                                                            | true          |
 | `rust-src-dir`           | Path from root directory to directory with the Rust source directory (if its not in the root of the repository). Sets a default value for `cache-workspaces` that enables caching. |               |
 
-[`Swatinem/rust-cache`]: https://github.com/Swatinem/rust-cache
+[`costa-app/rust-cache`]: https://github.com/costa-app/rust-cache
 
 ### RUSTFLAGS
 
